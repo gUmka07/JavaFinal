@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="506.0" prefWidth="880.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lesson7.javafx_mode.view.controller.NotepadController">
+   <children>
+      <TextArea fx:id="textArea" layoutX="30.0" layoutY="85.0" prefHeight="286.0" prefWidth="363.0" promptText="Введите текст" />
+      <Text layoutX="48.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введите текст ниже для вставки в документ с новой строки" />
+      <Button fx:id="btn_addRow" disable="true" layoutX="48.0" layoutY="390.0" mnemonicParsing="false" text="Добавить запись" onMouseClicked="#addRow"/>
+      <Button fx:id="btn_clearArea" disable="true" layoutX="172.0" layoutY="390.0" mnemonicParsing="false" text="Очистить поле" onMouseClicked="#clearText"/>
+      <Button fx:id="btn_clearNote" disable="true" layoutX="658.0" layoutY="390.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="163.0" text="Очистить документ" />
+      <TableView layoutX="478.0" layoutY="70.0" prefHeight="304.0" prefWidth="386.0" fx:id="table">
+        <columns>
+          <TableColumn prefWidth="378.0" text="Список записей в документе" fx:id="rows"/>
+        </columns>
+      </TableView>
+      <Button fx:id="btn_deleteSelected" disable="true" layoutX="559.0" layoutY="390.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="70.0" text="Удалить" onMouseClicked="#deleteRow"/>
+      <Button fx:id="btn_saveNote" layoutX="691.0" layoutY="459.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="98.0" text="Сохранить" onMouseClicked="#onSave"/>
+      <Button fx:id="btn_showText" disable="true" layoutX="480.0" layoutY="390.0" mnemonicParsing="false" text="Изменить" onMouseClicked="#changeRow"/>
+       <Button fx:id="btn_refreshRow" disable="true" layoutX="48.0" layoutY="426.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="123.0" text="Обновить запись"
+               onMouseClicked="#updateRow"/>
+   </children>
+</AnchorPane>

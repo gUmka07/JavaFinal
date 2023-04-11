@@ -1,0 +1,30 @@
+{
+    // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
+    // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
+    // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "lesson7.console_mode.Main",
+            "projectName": "lesson7_6abb8968"
+        },
+        {
+            "type": "java",
+            "name": "Main(1)",
+            "request": "launch",
+            "mainClass": "lesson7.javafx_mode.Main",
+            "projectName": "lesson7_6abb8968",
+            "vmArgs": "--module-path \"C:\\Program Files\\Java\\javafx-sdk-11.0.2\\lib\" --add-modules javafx.controls,javafx.fxml" 
+
+        }
+    ]
+}
